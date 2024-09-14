@@ -1,0 +1,18 @@
+server {
+    listen 8082;
+
+    root /mnt/c/user/dev/lab/codingiseasy.lol/todo/client;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html; 
+    }
+
+    location /auth {
+        proxy_pass http://127.0.0.1:3000;
+    }
+
+    location /api {
+        proxy_pass http://127.0.0.1:3000;
+    }
+}

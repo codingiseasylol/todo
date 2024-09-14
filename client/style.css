@@ -1,0 +1,178 @@
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background: #eee;
+}
+
+.app {
+    height: 100svh;
+    width: 100svw;
+
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+
+h1,
+h2 {
+    margin: 0px;
+}
+
+h2 {
+    opacity: 0.5;
+}
+
+/* LOGIN ================================================================================ */
+
+.auth-container {
+    height: 100%;
+    width: 100%;
+
+    grid-row: 1/-1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container h1,
+.auth-container h2 {
+    text-align: center;
+}
+
+.login,
+.signup,
+.reset {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reset {
+    width: 200px;
+}
+
+.auth-container a {
+    text-align: center;
+}
+
+/* CONTAINER ================================================================================ */
+
+.container {
+    height: calc(100svh - 70px);
+    width: calc(100svw - 20px);
+    padding: 10px;
+}
+
+/* HEADER ================================================================================ */
+
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* TODO ================================================================================ */
+
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+.todos-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.todos,
+.completed {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    padding: 0px 10px 10px 0px;
+    width: 500px;
+    max-width: 500px;
+}
+
+.todo {
+    display: flex;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo:hover {
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.completed {
+    opacity: 0.5;
+}
+
+.todo .remove {
+    font-weight: bold;
+    color: red;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+/* COMPONENTS ================================================================================ */
+
+input[type="text"],
+input[type="password"] {
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+button {
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    /* right, bottom,  blur, spread */
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-device-width: 600px) {
+}
