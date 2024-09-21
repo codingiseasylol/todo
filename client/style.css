@@ -56,6 +56,11 @@ h2 {
 
 .auth-container a {
     text-align: center;
+    color: black;
+}
+
+.header a {
+    color: black;
 }
 
 /* CONTAINER ================================================================================ */
@@ -175,4 +180,85 @@ button:hover {
 }
 
 @media only screen and (max-device-width: 600px) {
+    .login {
+        width: 500px;
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 60px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    button {
+        font-size: 60px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .auth-container a {
+        font-size: 60px;
+    }
+
+    .app {
+        grid-template-rows: 140px auto;
+    }
+
+    .header {
+        padding: 70px;
+        font-size: 60px;
+        justify-content: space-between;
+    }
+
+    .container {
+        padding: 70px;
+    }
+
+    .todos-wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .todos,
+    .completed {
+        width: 100%;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .todo {
+        font-size: 70px;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    input[type="checkbox"] {
+        height: 60px;
+        width: 60px;
+    }
+
+    .form {
+        margin-bottom: 30px;
+        gap: 35px;
+    }
+
+    .todo .remove {
+        font-size: 70px;
+    }
+
+    .reset {
+        width: 100%;
+        gap: 30px;
+    }
 }

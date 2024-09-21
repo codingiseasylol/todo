@@ -6,6 +6,7 @@ let middleware = require("./middleware.js");
 
 let login = require("./auth/login");
 let signup = require("./auth/signup");
+let logout = require("./auth/logout");
 
 let todos = require("./api/todos.js");
 let user = require("./api/user.js");
@@ -18,6 +19,7 @@ app.use(cookieParser());
 
 app.use(login)
     .use(signup)
+    .use(logout)
 
     .use(middleware.authenticationMiddleware)
 

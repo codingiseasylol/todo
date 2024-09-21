@@ -6,8 +6,6 @@ import Header from "./layout/Header.js";
 import Todos from "./pages/Todos.js";
 import User from "./pages/User.js";
 
-import Logout from "./auth/Logout.js";
-
 const app = document.getElementById("app");
 
 function containerMiddleware(ctx, next) {
@@ -27,6 +25,11 @@ page("/user", User);
 
 page("/", Todos);
 
-page("/logout", Logout);
+async function logout() {
+    await fetch("/auth/logout");
+    page("/login");
+}
+
+page("/logout", logout);
 
 page();
