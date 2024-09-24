@@ -75,7 +75,7 @@ h2 {
 
 .header {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     padding: 10px;
 }
@@ -218,6 +218,7 @@ button:hover {
         padding: 70px;
         font-size: 60px;
         justify-content: space-between;
+        gap: 40px;
     }
 
     .container {

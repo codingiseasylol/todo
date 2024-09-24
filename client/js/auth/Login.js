@@ -14,6 +14,7 @@ export default async () => {
                 <a href="/signup">signup</a>
             </div>
             <div id="message"></div>
+            <a href="https://github.com/codingiseasylol/todo" target="_blank">Github Code</a>
         </div>
     `;
 

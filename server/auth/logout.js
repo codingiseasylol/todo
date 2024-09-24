@@ -2,8 +2,6 @@ let express = require("express");
 let router = express.Router();
 
 router.get("/auth/logout", (req, res) => {
-    console.log("logout");
-
     res.cookie("token", "", {
         httpOnly: true,
         secure: false,

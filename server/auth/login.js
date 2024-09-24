@@ -25,7 +25,6 @@ router.post("/auth/login", async (req, res, next) => {
         if (user) {
             let token = jwt.sign(
                 {
-                    username: user.username,
                     userId: user.id,
                 },
                 config.tokenSecret,
